@@ -5,6 +5,11 @@
     --default-padding: 0 80px;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -36,6 +41,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 2;
     padding: var(--default-padding);
 }
 
@@ -165,7 +172,7 @@ section {
     font-size: 10px;
     width: 102px;
     color: white;
-    
+
 }
 
 .container-info span:nth-of-type(2) {
@@ -208,7 +215,8 @@ section {
     color: var(--primary-color);
 }
 
-.item-text h4 , .item-text a {
+.item-text h4,
+.item-text a {
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -230,10 +238,10 @@ section {
 }
 
 .bebida:hover {
-    box-shadow: 0 0 16px #999 ;
+    box-shadow: 0 0 16px #999;
 }
 
-.cardapio-item:last-child { 
+.cardapio-item:last-child {
     border: none;
 }
 
@@ -299,7 +307,7 @@ section {
     width: 75%;
     justify-content: space-between;
     flex-grow: 1;
-    
+
 }
 
 .logo {
@@ -355,12 +363,10 @@ footer {
     justify-content: space-between;
 }
 
-
-
 .copy-right {
     height: 71px;
     width: 100%;
     display: grid;
     place-content: center;
     border-top: 2px solid var(--secundary-color);
-}
+} 
